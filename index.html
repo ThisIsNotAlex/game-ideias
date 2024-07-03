@@ -27,11 +27,17 @@
                 height: 100px;
             }
             nav {
-                flex: 1 1 200px;
+                flex: 1 1 100vw;
+                height: 100px;
+                justify-content: center;
+            }
+            nav a {
+                margin: 5%;
+                font-size: 20pt;
             }
             main {
                 flex: 20 1 500px;
-                height: calc(100vh - 224px);
+                height: calc(100vh - 330px);
             }
             aside {
                 flex: 1 1 200px;
@@ -41,9 +47,13 @@
                 flex: 1 1 100vw;
                 height: 100px;
             }
+            a {
+                text-decoration: none;
+                color: inherit;
+            }
             @media only screen and (max-width: 923px) {
                 main {
-                    height: calc(100vh - 330px);
+                    height: calc(100vh - 436px);
                 }
                 aside {
                     flex: 1 1 100vw;
@@ -54,9 +64,18 @@
     </head>
     <body>
         <header>Cabeçalho</header>
-        <nav>Menu</nav>
+
+        <nav>
+            <a href="#">Easter eggs</a>
+            <a href="#">Personagens</a>
+            <a href="#">Trilhas Sonoras</a>
+            <a href="#">Ambientes e Eventos</a>
+        </nav>
+
         <main>Principal</main>
+
         <aside>Relacionado</aside>
+
         <footer>Rodapé</footer>
         
     </body>
